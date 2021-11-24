@@ -1,0 +1,2 @@
+npm install vue // 개발&배포 둘 다 사용
+npm i webpack webpack-cli -D // 배포를 위한 보조 도구 개발할때만 사용

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <style>
+  #my_frame { width: 400px; height: 300px; }
+  </style>
+
+  <div>
+    <button onclick='open_in_frame("https://m.naver.com")'>네이버</button>
+    <button onclick='open_in_frame("https://en.m.wikipedia.org")'>영어 위키백과</button>
+    <button onclick='open_in_frame("https://ko.m.wikipedia.org")'>한국어 위키백과</button>
+  </div>
+  <iframe id='my_frame' src='https://ko.m.wikipedia.org'></iframe>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+  function open_in_frame(url) {
+  	$('#my_frame').attr('src', url);
+  }
+  </script>
+
+</body>
+</html>
